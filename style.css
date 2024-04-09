@@ -1,0 +1,28 @@
+h1 {
+    color: rgb(209, 127, 12);
+}
+
+
+.grid {
+    display: grid;
+    grid-template-areas:
+        "topbar1         topbar2         topbar3"
+        "topbar1         content         sidebar"
+        "footer1         footer2        footer2";
+
+    gap: 30px;
+    margin: 50px;
+}
+
+.grid * {
+    background-color: rgb(69, 136, 213);
+    padding: 30px;
+}
+
+.box-a {
+    grid-area: topbar1;
+}
+
+.box-g {
+    grid-area: footer2;
+}
